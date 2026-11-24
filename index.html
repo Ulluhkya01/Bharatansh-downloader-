@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bharatansh Downloader — a simple tool for saving social videos you own or are authorized to download.">
+  <meta name="theme-color" content="#090d18">
+  <title>Bharatansh Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Bharatansh Downloader home">
+      <span class="brand-mark">B</span><span>Bharatansh <b>Downloader</b></span>
+    </a>
+    <span class="status"><i></i> Simple · Fast · Free</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="spark">✦</span> YOUR SOCIAL MEDIA TOOLKIT</div>
+      <h1>Save videos.<br><span>Keep your moments.</span></h1>
+      <p class="subhead">A simple place to save Instagram and Facebook videos that you own or have permission to download.</p>
+
+      <div class="download-card">
+        <div class="platforms">
+          <span class="platform active"><span class="ig-icon">◎</span> Instagram</span>
+          <span class="platform"><span class="fb-icon">f</span> Facebook</span>
+        </div>
+        <form id="download-form">
+          <label for="video-url">Paste video link</label>
+          <div class="input-wrap">
+            <span class="link-icon">↗</span>
+            <input id="video-url" type="url" placeholder="https://www.instagram.com/reel/..." autocomplete="url" required>
+            <button class="paste-btn" type="button" id="paste-btn">Paste</button>
+          </div>
+          <button class="download-btn" id="download-btn" type="submit">
+            <span>Check video link</span><span class="arrow">→</span>
+          </button>
+        </form>
+        <div id="result" class="result" role="status" aria-live="polite" hidden></div>
+        <div class="privacy-note"><span>🔒</span> We don't ask for your social media password.</div>
+      </div>
+
+      <div class="supported">
+        <span>SUPPORTED PLATFORMS</span>
+        <div><span class="mini-icon instagram">◎</span> Instagram <span class="dot">·</span> <span class="mini-icon facebook">f</span> Facebook</div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="section-heading"><span class="eyebrow">HOW IT WORKS</span><h2>Three simple steps</h2></div>
+      <div class="step-grid">
+        <article class="step"><div class="step-number">01</div><div class="step-icon">🔗</div><h3>Copy the link</h3><p>Copy the link to a video you own or are allowed to save.</p></article>
+        <article class="step"><div class="step-number">02</div><div class="step-icon">⌘</div><h3>Paste it here</h3><p>Paste the Instagram or Facebook link into the box above.</p></article>
+        <article class="step"><div class="step-number">03</div><div class="step-icon">↓</div><h3>Save your video</h3><p>When an authorized provider is connected, available downloads will appear here.</p></article>
+      </div>
+    </section>
+    <section class="notice"><span>ⓘ</span><p><b>Use responsibly.</b> Only download videos you created, own, or have permission to save. Respect creators' rights and each platform's terms. Private, restricted, or DRM-protected content is not supported.</p></section>
+  </main>
+  <footer><a class="brand footer-brand" href="/"><span class="brand-mark">B</span><span>Bharatansh <b>Downloader</b></span></a><span>Made for simple, responsible saving.</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
